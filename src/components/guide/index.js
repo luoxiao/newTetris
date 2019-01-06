@@ -14,7 +14,7 @@ export default {
     QRTitle: () => i18n.QRNotice[lan],
     QRSrc: () =>
       window.location.protocol +
-      '//binaryify.github.io/vue-tetris/static/qr.jpeg'
+      '//luoxiao.github.io/newTetris/dist/static/qr.jpeg'
   },
   mounted() {
     window.addEventListener('resize', this.resize.bind(this), true)
