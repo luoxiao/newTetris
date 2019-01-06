@@ -6,8 +6,8 @@
         <vbutton
           color="blue"
           size="s1"
-          :top="0"
-          :left="374"
+          :top="0 + 10"
+          :left="374 - 260"
           :label="rotation"
           arrow="translate(0, 63px)"
           :position="true"
@@ -17,8 +17,8 @@
         <vbutton
           color="blue"
           size="s1"
-          :top="180"
-          :left="374"
+          :top="180 + 10"
+          :left="374 - 260"
           :label="labelDown"
           arrow="translate(0,-71px) rotate(180deg)"
           :active="keyboard['down']"
@@ -27,8 +27,8 @@
         <vbutton
           color="blue"
           size="s1"
-          :top="90"
-          :left="284"
+          :top="90 + 10"
+          :left="284 - 260"
           :label="labelLeft"
           arrow="translate(60px, -12px) rotate(270deg)"
           :active="keyboard['left']"
@@ -37,8 +37,8 @@
         <vbutton
           color="blue"
           size="s1"
-          :top='90'
-          :left='464'
+          :top='90 + 10'
+          :left='464 - 260'
           :label="labelRight"
           arrow="translate(-60px, -12px) rotate(90deg)"
           :active="keyboard['right']"
@@ -48,7 +48,7 @@
           color="blue"
           size="s0"
           :top="100"
-          :left="52"
+          :left="52 + 300"
           :label="labelDropSpace"
           :active="keyboard['drop']"
           ref="dom_space"
@@ -57,7 +57,7 @@
           color="red"
           size="s2"
           :top="0"
-          :left="196"
+          :left="196 + 300"
           :label="labelResetR"
           :active="keyboard['reset']"
           ref="dom_r"
@@ -66,7 +66,7 @@
           color="green"
           size="s2"
           :top="0"
-          :left="106"
+          :left="106 + 300"
           :label="labelSoundS"
           :active="keyboard['music']"
           ref="dom_s"
@@ -75,7 +75,7 @@
           color="green"
           size="s2"
           :top="0"
-          :left="16"
+          :left="16 + 300"
           :label="labelPauseP"
           :active="keyboard['pause']"
           ref="dom_p"
