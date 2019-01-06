@@ -22,7 +22,7 @@ export const origin = {
 
 export const blockType = Object.keys(blockShape)
 
-export const speeds = [1250, 1100, 950, 800, 650, 500, 370, 250, 160]
+export const speeds = [800, 650, 500, 400, 320, 240, 180, 150, 120]
 
 export const delays = [20, 30, 40, 50, 60, 70, 80, 90, 100]
 
