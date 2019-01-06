@@ -8,11 +8,11 @@
           size="s1"
           :top="0 + 10"
           :left="374 - 270"
-          :label="rotation"
           arrow="translate(0, 63px)"
           :position="true"
-          :active="keyboard['rotate']"
-          ref="dom_rotate"
+          :label="labelDropSpace"
+          :active="keyboard['drop']"
+          ref="dom_space"
         />
         <vbutton
           color="blue"
@@ -49,9 +49,9 @@
           size="s0"
           :top="100"
           :left="52 + 310"
-          :label="labelDropSpace"
-          :active="keyboard['drop']"
-          ref="dom_space"
+          :label="rotation"
+          :active="keyboard['rotate']"
+          ref="dom_rotate"
         />
         <vbutton
           color="red"
