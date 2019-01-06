@@ -6,6 +6,10 @@ import { isFocus } from '../unit/'
 import { blankMatrix, lastRecord, maxPoint, blockType } from '../unit/const'
 import Block from '../unit/block'
 import { hasWebAudioAPI } from '../unit/music'
+import {
+    maxLevel
+} from '../unit/const'
+
 const { fromJS, List } = require('immutable')
 Vue.use(Vuex)
 
@@ -81,14 +85,14 @@ if (pointsInitState < 0) {
 let speedRunInitState = lastRecord && !isNaN(parseInt(lastRecord.speedRun, 10))
   ? parseInt(lastRecord.speedRun, 10)
   : 1
-if (speedRunInitState < 1 || speedRunInitState > 6) {
+if (speedRunInitState < 1 || speedRunInitState > maxLevel) {
   speedRunInitState = 1
 }
 let speedStartInitState = lastRecord &&
   !isNaN(parseInt(lastRecord.speedStart, 10))
   ? parseInt(lastRecord.speedStart, 10)
   : 1
-if (speedStartInitState < 1 || speedStartInitState > 6) {
+if (speedStartInitState < 1 || speedStartInitState > maxLevel) {
   speedStartInitState = 1
 }
 

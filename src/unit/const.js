@@ -22,9 +22,9 @@ export const origin = {
 
 export const blockType = Object.keys(blockShape)
 
-export const speeds = [800, 650, 500, 370, 250, 160]
+export const speeds = [1250, 1100, 950, 800, 650, 500, 370, 250, 160]
 
-export const delays = [50, 60, 70, 80, 90, 100]
+export const delays = [20, 30, 40, 50, 60, 70, 80, 90, 100]
 
 export const fillLine = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
@@ -77,7 +77,8 @@ export const transform = (function() {
   return trans.filter(e => body.style[e] !== undefined)[0]
 })()
 
-export const eachLines = 20 // 每消除eachLines行, 增加速度
+export const eachLines = 30 // 每消除eachLines行, 增加速度
+export const maxLevel = 9 // 最大等级
 
 export const getParam = param => {
   // 获取浏览器参数

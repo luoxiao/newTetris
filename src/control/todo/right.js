@@ -1,8 +1,10 @@
 import { want } from '../../unit/'
 import event from '../../unit/event'
 import states from '../states'
-import { speeds, delays } from '../../unit/const'
+import { speeds, delays, maxLevel } from '../../unit/const'
 import { music } from '../../unit/music'
+
+
 const down = store => {
   store.commit('key_right', true)
   event.down({
@@ -39,7 +41,7 @@ const down = store => {
         states.auto(remain)
       } else {
         let speed = state.speedStart
-        speed = speed + 1 > 6 ? 1 : speed + 1
+        speed = speed + 1 > maxLevel ? 1 : speed + 1
         store.commit('speedStart', speed)
       }
     }

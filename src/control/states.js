@@ -5,7 +5,8 @@ import {
   blankLine,
   blankMatrix,
   clearPoints,
-  eachLines
+  eachLines,
+  maxLevel
 } from '../unit/const'
 const { fromJS, List } = require('immutable')
 import { music } from '../unit/music'
@@ -183,7 +184,7 @@ const states = {
 
     const speedAdd = Math.floor(clearLines / eachLines) // 消除行数, 增加对应速度
     let speedNow = state.speedStart + speedAdd
-    speedNow = speedNow > 6 ? 6 : speedNow
+    speedNow = speedNow > maxLevel ? maxLevel : speedNow
     store.commit('speedRun', speedNow)
   },
 
