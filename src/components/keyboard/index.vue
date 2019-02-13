@@ -17,7 +17,7 @@
         <vbutton
           color="blue"
           size="s1"
-          :top="180 + 20"
+          :top="180 + 30"
           :left="374 - 270"
           :label="labelDown"
           arrow="translate(0,-71px) rotate(180deg)"
@@ -27,8 +27,8 @@
         <vbutton
           color="blue"
           size="s1"
-          :top="90 + 15"
-          :left="284 - 275"
+          :top="90 + 20"
+          :left="284 - 280"
           :label="labelLeft"
           arrow="translate(60px, -12px) rotate(270deg)"
           :active="keyboard['left']"
@@ -37,8 +37,8 @@
         <vbutton
           color="blue"
           size="s1"
-          :top='90 + 15'
-          :left='464 - 265'
+          :top='90 + 20'
+          :left='464 - 260'
           :label="labelRight"
           arrow="translate(-60px, -12px) rotate(90deg)"
           :active="keyboard['right']"
